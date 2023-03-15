@@ -1,0 +1,14 @@
+---
+import Menu from "./Menu.astro";
+const { title, date };
+---
+
+<header>
+  <Menu />
+  <slot />
+  <h1>{title}</h1>
+  <h2>{date}</h2>
+  <img src="logo.png" alt="logo" />
+</header>
+
+<style></style>
