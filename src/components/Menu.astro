@@ -2,19 +2,65 @@
   Menu
   <span></span>
 </button>
-
+<header class="grid_1-1">
+   <div class="logo">
+            <a href="#"><img class="kune_logo" src="public/logo.png" alt="logo"></a>
+        </div>
 <nav id="menu">
   <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Lineup</a></li>
-    <li><a href="#">Volunteer</a></li>
-    <li><a href="#">About</a></li>
+    <li><a href="#">LINE-UP</a></li>
+    <li><a href="#">VOLUNTEER</a></li>
+    <li><a href="#">ABOUT</a></li>
+    <li class="ticket"><a class="text_color"  href="#">GET TICKETS</a></li>
   </ul>
 </nav>
-
+</header>
 <script src="../scripts/menu.js"></script>
 
 <style>
+.grid_1-1{
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+ .kune_logo{
+  float: rigtht;
+  width: 50px;
+  margin: 20px;
+
+
+ }
+ ul{
+    list-style: none;
+  }
+ul li{
+  font-family: dosis;
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
+li a{
+  color: rgba(253, 132, 32, 1);
+  text-decoration: none;
+}
+#menu{
+  float: left;
+}
+#menu ul{
+  display: flex;
+  align-items: center;
+ gap: 20px 40px;
+ margin: 20px;
+}
+
+.ticket a{
+  background-color: rgba(253, 132, 32, 1);
+  color: white;
+  font-size: 1rem;
+  padding: 15px 25px 15px 25px;
+  margin: 10px;
+  border-radius: 30px;
+}
+
   #burger-menu {
     text-indent: -9999px;
     display: none;
@@ -35,7 +81,7 @@
     #burger-menu span,
     #burger-menu span:before,
     #burger-menu span:after {
-      background: #333;
+      background: rgba(253, 132, 32, 1);;
       display: block;
       height: 3px;
       opacity: 1;
@@ -62,13 +108,13 @@
       top: 0px;
       transform: rotate(90deg);
       width: 27px;
-      background: #fff;
+      background: rgba(253, 132, 32, 1);;
     }
     #burger-menu.close span {
       transform: rotate(-45deg);
       top: 13px;
       width: 27px;
-      background: #fff;
+      background: rgba(253, 132, 32, 1);;
     }
     #burger-menu.close span:after {
       top: 0px;
@@ -76,7 +122,7 @@
       transform: rotate(90deg);
       opacity: 0;
       width: 0;
-      background: #fff;
+      background: rgba(253, 132, 32, 1);
     }
     #menu {
       z-index: 1;
@@ -99,17 +145,28 @@
     }
     #menu ul {
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px 40px;
+      margin: 20px;
     }
     #menu li {
       list-style: none;
       display: initial;
+      
     }
     #menu a {
-      color: #fff;
+      color: rgba(253, 132, 32, 1);
       display: block;
-      font-size: 32px;
+      font-size: 20px;
       margin-bottom: 30px;
       text-decoration: none;
     }
+    .ticket a{
+      padding: 15px 25px 15px 25px;
+      margin: 10px;
+      border-radius: 30px;
+}
   }
 </style>
