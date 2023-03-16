@@ -10,8 +10,22 @@ const { title, text } = Astro.props;
 </section>
 
 <style>
+  section {
+    display: flexbox;
+    flex-direction: row;
+  }
+
+  h3,
+  p {
+    color: white;
+  }
   span {
     color: white;
     justify-self: right;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 </style>
