@@ -1,11 +1,16 @@
 ---
-const { title, text };
+const { title, text } = Astro.props;
 ---
 
 <section>
   <slot />
   <h3>{title}</h3>
   <p>{text}</p>
+  <span>&rarr;</span>
 </section>
 
-<style></style>
+<style>
+  section {
+    width: 100%;
+  }
+</style>
