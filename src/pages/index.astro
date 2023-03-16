@@ -3,6 +3,9 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Artist from "../components/Artist.astro";
 import Header from "../components/Header.astro";
+import News from "../components/News.astro";
+import Button from "../components/Button.astro";
+import Navigation from "../components/Navigation.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -10,6 +13,8 @@ import Header from "../components/Header.astro";
     <img src="/img/forside.png" alt="forside" />
   </Header>
   <main>
+    <Navigation />
+
     <Artist title="DANIEL STORIAN">
       <img src="/1.jpg" alt="1" />
     </Artist>
