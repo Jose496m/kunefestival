@@ -8,4 +8,23 @@ const { title } = Astro.props;
   <span>&rarr;</span>
 </section>
 
-<style></style>
+<style>
+  section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    column-gap: 18px;
+    row-gap: 9px;
+    width: 100%;
+  }
+  h3 {
+    justify-self: end;
+    align-self: start;
+    transform: translate(-327px, 211px);
+    color: white;
+  }
+  span {
+    justify-self: center;
+    color: white;
+  }
+</style>
