@@ -10,7 +10,7 @@ import Navigation from "../components/Navigation.astro";
 
 <Layout title="Welcome to Astro.">
   <Header title="KUNE FESTIVAL" date="19-23 JULY">
-    <img src="/img/forside.png" alt="forside" />
+    <img class="banner" src="/img/forside.png" alt="forside" />
   </Header>
   <main>
     <Navigation />
@@ -42,6 +42,9 @@ import Navigation from "../components/Navigation.astro";
     font-size: 3rem;
     font-weight: 800;
     margin: 0;
+  }
+  .banner {
+    width: 100%;
   }
   .text-gradient {
     background-image: var(--accent-gradient);

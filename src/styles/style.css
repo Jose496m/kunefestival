@@ -3,9 +3,16 @@
   --brand-color: rgba(253, 132, 32, 1);
   --h1-color: #e14e2a;
 }
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: rgba(32, 49, 65, 1);
+}
+img {
+  width: 100%;
 }
 h1 {
   font-size: 9rem;
