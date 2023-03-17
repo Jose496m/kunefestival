@@ -28,3 +28,8 @@ h2 {
   font-size: 5vw;
   color: var(--bg);
 }
+
+h3 {
+  font-family: "Dosis", sans-serif;
+  font-size: 3vw;
+}
