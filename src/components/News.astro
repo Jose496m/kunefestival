@@ -11,9 +11,11 @@ const { title, text } = Astro.props;
 
 <style>
   section {
-    display: flexbox;
+    display: flex;
     text-align: left;
+    flex-direction: column;
   }
+
   h4 {
     color: white;
   }
@@ -25,8 +27,7 @@ const { title, text } = Astro.props;
   span {
     color: white;
     font-size: 2rem;
-    position: relative;
-    left: 300px;
+    align-self: flex-end;
   }
 
   img {
