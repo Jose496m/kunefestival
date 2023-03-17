@@ -1,7 +1,11 @@
 ---
 ---
 
-<button>GET TICKETS</button>
+<div class="button_container">
+  <div class="center">
+    <button>GET TICKETS</button>
+  </div>
+</div>
 
 <style>
   button {
@@ -10,5 +14,34 @@
     border-radius: 30px;
     padding: 20px 30px;
     border: 1.5px solid rgb(255, 255, 255);
+    position: relative;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  button:before {
+    content: "";
+    display: block;
+    width: 743px;
+    height: 0.5px;
+    position: absolute;
+    background: rgba(253, 132, 32, 1);
+    left: -764px;
+    top: 50%;
+  }
+
+  button:after {
+    content: "";
+    display: block;
+    width: 743px;
+    height: 0.5px;
+    position: absolute;
+    background: rgba(253, 132, 32, 1);
+    left: 161px;
+    top: 50%;
   }
 </style>
