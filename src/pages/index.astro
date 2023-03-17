@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 import Artist from "../components/Artist.astro";
 import Header from "../components/Header.astro";
 import News from "../components/News.astro";
@@ -14,10 +13,18 @@ import Navigation from "../components/Navigation.astro";
   </Header>
   <main>
     <Navigation />
-
-    <Artist title="DANIEL STORIAN">
-      <img src="/1.jpg" alt="1" />
-    </Artist>
+    <h2>ARTISTS</h2>
+    <div class="artists_grid">
+      <Artist title="DANIEL STORIAN">
+        <img src="/img/1.webp" alt="1" />
+      </Artist>
+      <Artist title="DANIEL STORIAN">
+        <img src="/img/2.webp" alt="1" />
+      </Artist>
+      <Artist title="DANIEL STORIAN">
+        <img src="/img/3.webp" alt="1" />
+      </Artist>
+    </div>
     <Button />
 
     <section class="news_grid">
@@ -45,6 +52,10 @@ import Navigation from "../components/Navigation.astro";
   .news_grid {
     display: flex;
     flex-direction: flex-end;
+  }
+  .artists_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .galleri_forside {
