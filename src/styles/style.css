@@ -8,6 +8,13 @@ body {
   background-color: rgba(32, 49, 65, 1);
 }
 h1 {
-  font-size: 8rem;
+  font-size: 9rem;
   color: var(--h1-color);
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+}
+h2 {
+  font-family: "Dosis", sans-serif;
+  font-size: 4rem;
+  color: var(--bg);
 }
