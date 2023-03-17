@@ -15,13 +15,13 @@ img {
   width: 100%;
 }
 h1 {
-  font-size: 9rem;
+  font-size: 12vw;
   color: var(--h1-color);
   font-family: "Dosis", sans-serif;
   font-weight: 600;
 }
 h2 {
   font-family: "Dosis", sans-serif;
-  font-size: 4rem;
+  font-size: 5vw;
   color: var(--bg);
 }
