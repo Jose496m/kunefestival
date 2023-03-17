@@ -4,8 +4,10 @@ const { title } = Astro.props;
 
 <section>
   <slot />
-  <h3>{title}</h3>
-  <span>&rarr;</span>
+  <div class="text">
+    <h3>{title}</h3>
+    <span>&rarr;</span>
+  </div>
 </section>
 <style>
   section {
@@ -14,20 +16,17 @@ const { title } = Astro.props;
     grid-template-rows: auto;
     width: 100%;
   }
-  h3 {
+  .text {
     justify-self: center;
     align-self: start;
     color: white;
     transform: translate(0, -20px);
   }
   span {
-    justify-self: center;
-    color: white;
-    transform: translate(0, -20px);
     font-size: 2rem;
   }
 
-  span:hover {
+  .text:hover {
     color: var(--brand-color);
   }
 </style>
