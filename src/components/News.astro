@@ -14,6 +14,8 @@ const { title, text } = Astro.props;
     display: flex;
     text-align: left;
     flex-direction: column;
+    border: 5px solid transparent;
+    padding: 20px;
   }
 
   h4 {
@@ -28,6 +30,14 @@ const { title, text } = Astro.props;
     color: white;
     font-size: 2rem;
     align-self: flex-end;
+  }
+
+  span:hover {
+    color: var(--brand-color);
+  }
+
+  section:hover {
+    border: 5px solid rgba(253, 132, 32, 1);
   }
 
   img {
