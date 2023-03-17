@@ -5,6 +5,7 @@ import Header from "../components/Header.astro";
 import News from "../components/News.astro";
 import Button from "../components/Button.astro";
 import Navigation from "../components/Navigation.astro";
+import ButtonOrange from "../components/Button_orange.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -25,6 +26,7 @@ import Navigation from "../components/Navigation.astro";
         <img src="/img/3.webp" alt="1" />
       </Artist>
     </div>
+    <ButtonOrange title="VIEW ALL ARTIST" />
     <Button />
 
     <section class="news_grid">
@@ -53,6 +55,7 @@ import Navigation from "../components/Navigation.astro";
     display: flex;
     flex-direction: flex-end;
     gap: 30px;
+    margin: 12px;
   }
   .artists_grid {
     display: grid;
