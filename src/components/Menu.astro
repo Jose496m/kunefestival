@@ -1,3 +1,8 @@
+---
+const { title } = Astro.props;
+import Button_orange from "./Button_orange.astro";
+---
+
 <button id="burger-menu">
   Menu
   <span></span>
@@ -10,7 +15,13 @@
       <li><a href="/lineup">LINE-UP</a></li>
       <li><a href="#">VOLUNTEER</a></li>
       <li><a href="/about">ABOUT</a></li>
-      <li class="ticket"><a class="text_color" href="#">GET TICKETS</a></li>
+      <li>
+        <div class="button_container">
+          <div class="center">
+            <Button_orange title="GET TICKETS" />
+          </div>
+        </div>
+      </li>
     </li>
   </ul>
 </nav>
@@ -49,22 +60,6 @@
     align-items: center;
     gap: 20px 40px;
     margin: 20px;
-  }
-
-  .ticket a {
-    background-color: rgba(253, 132, 32, 1);
-    color: white;
-    font-weight: bold;
-    font-size: 1rem;
-    padding: 15px 25px 15px 25px;
-    margin: 10px;
-    border-radius: 30px;
-  }
-
-  .ticket a:hover {
-    background-color: white;
-    color: #fd8420;
-    border: 2px solid rgba(253, 132, 32, 1);
   }
 
   #menu a:hover {
