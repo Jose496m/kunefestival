@@ -1,7 +1,28 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
-import News from "../components/News.astro";
-import Button from "../components/Button.astro";
 import Navigation from "../components/Navigation.astro";
+import AboutCard from "../components/About_card.astro";
 ---
+
+<Layout>
+  <Header title="KUNE FESTIVAL" date="19-23 JULY">
+    <video autoplay muted loop src="/video_forside.mp4"></video>
+  </Header>
+
+  <main>
+    <Navigation />
+    <h2>ABOUT</h2>
+    <div class="about_grid">
+      <AboutCard title="WHO IS KUNE?">
+        <img src="news4.webp" alt="billede" />
+      </AboutCard>
+      <AboutCard title="LOCATION">
+        <img src="news4.webp" alt="billede" />
+      </AboutCard>
+      <AboutCard title="MAP">
+        <img src="news4.webp" alt="billede" />
+      </AboutCard>
+    </div>
+  </main>
+</Layout>
