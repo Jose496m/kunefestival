@@ -1,7 +1,52 @@
 ---
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
+import Artist from "../components/Artist.astro";
+import Day from "../components/Day.astro";
+const url = "https://lqsydolvzgwrecxfbwmp.supabase.co/rest/v1/kune";
+const options = {
+  headers: {
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imxxc3lkb2x2emd3cmVjeGZid21wIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzg3OTU1NDAsImV4cCI6MTk5NDM3MTU0MH0.8FosJWKvJueQg96G9INSXixKRgxb9UXEYfhFbYWOSGU",
+  },
+};
+const response = await fetch(url, options);
+const data = await response.json();
 ---
 
-<Header />
-<Layout />
+<Layout>
+  <Header title="LINE-UP">
+    <img src="/img/lineup.webp" alt="lineup" />
+  </Header>
+  <main>
+    <h2>ARTISTS</h2>
+    <h3>WEDNESDAY, 19th JULY</h3>
+    <Day />
+    <section>
+      {data.map((artist) => <Artist image={`/img/${artist.image}`} name={artist.name} />)}
+    </section>
+  </main>
+</Layout>
+
+<style>
+  h3 {
+    color: white;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  @media (min-width: 800px) {
+    section {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+      margin-inline: 6rem;
+    }
+    h2 {
+      margin: 2rem;
+    }
+  }
+  @media (max-width: 800px) {
+    section {
+      margin: 4rem;
+    }
+  }
+</style>

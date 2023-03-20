@@ -3,7 +3,7 @@ const { name, image } = Astro.props;
 ---
 
 <section>
-  <img src={image} alt="artist" />
+  <slot />
   <div class="text">
     <h3>{name}</h3>
     <span class="arrow">&rarr;</span>
