@@ -19,22 +19,16 @@ const data = await response.json();
   </Header>
   <main>
     <h2>ARTISTS</h2>
-    <h3>WEDNESDAY, 19th JULY</h3>
-    <Day />
-    <section>
+    <Day title="WEDNESDAY, 19th JULY" />
+    <div>
       {data.map((artist) => <Artist image={`/img/${artist.image}`} name={artist.name} />)}
-    </section>
+    </div>
   </main>
 </Layout>
 
 <style>
-  h3 {
-    color: white;
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
   @media (min-width: 800px) {
-    section {
+    div {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 30px;
@@ -45,8 +39,11 @@ const data = await response.json();
     }
   }
   @media (max-width: 800px) {
-    section {
+    div {
       margin: 4rem;
+    }
+    h2 {
+      margin-block: 1.5rem;
     }
   }
 </style>
