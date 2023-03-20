@@ -1,9 +1,10 @@
 ---
+const { title } = Astro.props;
 ---
 
 <div class="button_container">
   <div class="center">
-    <button>GET TICKETS</button>
+    <button>{title}</button>
   </div>
 </div>
 
@@ -12,12 +13,13 @@
     color: white;
     background-color: rgba(32, 49, 65, 1);
     border-radius: 30px;
-    padding: 20px 30px;
+    padding: 20px 20px;
     border: 1.5px solid rgb(255, 255, 255);
     position: relative;
     font-family: "Dosis";
     font-size: 1rem;
     cursor: pointer;
+    font-weight: bold;
   }
 
   button:hover {

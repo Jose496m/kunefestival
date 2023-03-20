@@ -6,7 +6,7 @@ const { title } = Astro.props;
   <slot />
   <div class="text">
     <h3>{title}</h3>
-    <span>&rarr;</span>
+    <span class="arrow">&rarr;</span>
   </div>
 </section>
 <style>
@@ -17,15 +17,18 @@ const { title } = Astro.props;
     width: 100%;
   }
   .text {
-    justify-self: center;
-    align-self: start;
     color: white;
     transform: translate(0, -20px);
+    cursor: pointer;
   }
-  span {
+  .arrow {
+    display: flex;
+    justify-content: center;
     font-size: 2rem;
   }
-
+  h3 {
+    text-align: center;
+  }
   .text:hover {
     color: var(--brand-color);
   }
