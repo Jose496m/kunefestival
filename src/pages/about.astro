@@ -27,7 +27,15 @@ import AboutCard from "../components/About_card.astro";
         <div>
           <img class="pic1 pic2" src="img/KUNE22.webp" alt="billede" />
         </div>
-        <div><img class="pic1" src="img/KUNE1.webp" alt="billede" /></div>
+        <div class="container">
+          <!--Area of the images-->
+          <div class="wrapper">
+            <img class="k1" src="img/k1.webp" alt="k1" />
+            <img class="k2" src="img/k2.webp" alt="k2" />
+            <img class="k3" src="img/k3.webp" alt="k3" />
+          </div>
+        </div>
+
         <div>
           <AboutCard
             title="LOCATION"
@@ -35,8 +43,9 @@ import AboutCard from "../components/About_card.astro";
             text1="This close-knit community setting creates a petri dish for social interactions, where we can connect and bond in a way that is impossible in our everyday lives.This unique location provides a striking contrast between its historical purpose of aggression and its current function as a hub for a cultural celebration. The island’s transformation into a place dedicated to youth and innovative cultural initiatives highlights the shift from conflict to community and symbolizes hope and possibility. By hosting the festival on this historic site, we aim to offer a powerful reminder of the positive impact art and culture can have on society and their role in bringing people together and fostering understanding and connection."
           />
         </div>
+        <div><img class="pic1 pic3" src="img/KUNE1.webp" alt="billede" /></div>
 
-        <div>
+        <div class="text3">
           <AboutCard
             title="MAP"
             text="The island is a decommissioned defense fort built in the 19th century. A unique landmark with historical value, the fort-island was recently renovated and repurposed into a place dedicated to young people and innovative cultural initiatives. It can host 2500 people, 1000 of which could be accommodated in the camping area."
@@ -53,28 +62,86 @@ import AboutCard from "../components/About_card.astro";
   </main>
 
   <style>
-    .about_grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    @media (min-width: 800px) {
+      .about_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+      .pic1 {
+        width: 90%;
+        margin: 2%;
+        padding: 3%;
+        margin-top: -75%;
+      }
+      .pic2 {
+        margin-top: 10%;
+      }
+
+      .container {
+        width: 229px;
+
+        transform: translate(-50%, -50%);
+        margin-top: 3%;
+        margin-left: 119%;
+      }
+      .pic3 {
+        margin-top: -60%;
+      }
+
+      /*Area of images*/
+      .wrapper {
+        width: 85%;
+        display: flex;
+        margin-top: -40%;
+        margin-left: 7%;
+      }
+
+      main {
+        max-width: 1800px;
+        margin: 0 auto;
+        float: none;
+      }
     }
 
-    img {
-      display: block;
-      max-width: 100%;
-    }
-    .pic1 {
-      width: 90%;
-      margin: 2%;
-      padding: 3%;
-      margin-top: 12%;
-    }
-    .pic2 {
-      margin-top: 20%;
-    }
-    main {
-      max-width: 1800px;
-      margin: 0 auto;
-      float: none;
+    @media (max-width: 600px) {
+      p {
+        font-size: 10px;
+        width: 85%;
+      }
+
+      /*Area of images*/
+      .wrapper {
+        width: 100%;
+        display: flex;
+      }
+      .container {
+        width: 100px;
+        transform: translate(-50%, -50%);
+        margin-top: 7%;
+        margin-left: 10%;
+      }
+      .k1 {
+        width: 150%;
+        margin: 8%;
+      }
+      .k2 {
+        width: 150%;
+        margin: 8%;
+      }
+      .k3 {
+        width: 150%;
+        margin: 8%;
+      }
+
+      .pic1 {
+        width: 85%;
+        margin: 5%;
+      }
     }
   </style>
 </Layout>
