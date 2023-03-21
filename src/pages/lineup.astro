@@ -3,6 +3,7 @@ import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 import Artist from "../components/Artist.astro";
 import Day from "../components/Day.astro";
+import Button_line from "../components/Button_line.astro";
 const url = "https://lqsydolvzgwrecxfbwmp.supabase.co/rest/v1/kune";
 const options = {
   headers: {
@@ -45,6 +46,7 @@ const sunday = data.filter((act) => act.day === "Sunday");
     <div>
       {sunday.map((artist) => <Artist image={`/img/${artist.image}`} name={artist.name} />)}
     </div>
+    <Button_line title="GET TICKETS" />
   </main>
 </Layout>
 
@@ -68,4 +70,4 @@ const sunday = data.filter((act) => act.day === "Sunday");
       margin-block: 1.5rem;
     }
   }
-</style>
+</style>" />
