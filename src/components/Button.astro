@@ -1,28 +1,29 @@
 ---
-const { title, onclick } = Astro.props;
+const { title, link } = Astro.props;
 ---
 
 <div class="button_container">
   <div class="center">
-    <button>{title}{onclick}</button>
+    <a href={link}>{title}</a>
   </div>
 </div>
 
 <style>
-  button {
+  a {
     color: white;
     background-color: rgba(32, 49, 65, 1);
     border-radius: 30px;
-    padding: 20px 20px;
+    padding: 23px 30px;
     border: 1.5px solid rgb(255, 255, 255);
     position: relative;
     font-family: "Dosis";
     font-size: 1rem;
     cursor: pointer;
     font-weight: bold;
+    text-decoration: none;
   }
 
-  button:hover {
+  a:hover {
     color: rgba(32, 49, 65, 1);
     background-color: white;
     border: 1.5px solid rgba(32, 49, 65, 1);
@@ -35,7 +36,7 @@ const { title, onclick } = Astro.props;
     margin: 20px;
   }
 
-  button:before {
+  a:before {
     content: "";
     display: block;
     width: 40vw;
@@ -46,7 +47,7 @@ const { title, onclick } = Astro.props;
     top: 50%;
   }
 
-  button:after {
+  a:after {
     content: "";
     display: block;
     width: 40vw;

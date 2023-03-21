@@ -6,8 +6,8 @@ import AboutCard from "../components/About_card.astro";
 ---
 
 <Layout>
-  <Header title="KUNE FESTIVAL" date="19-23 JULY">
-    <video autoplay muted loop src="/video_forside.mp4"></video>
+  <Header title="ABOUT">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OJyL2mzsiLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </Header>
 
   <main>
@@ -63,6 +63,10 @@ import AboutCard from "../components/About_card.astro";
 
   <style>
     @media (min-width: 800px) {
+      iframe {
+        width: 100vw;
+        height: 57vw;
+      }
       .about_grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
