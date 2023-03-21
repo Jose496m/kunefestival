@@ -51,19 +51,6 @@ import Button_line from "../components/Button_line.astro";
   </main>
 
   <style>
-    .news_grid {
-      display: flex;
-      flex-direction: flex-end;
-      margin: 12px;
-    }
-
-    .artists_grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 30px;
-      margin-inline: 4rem;
-    }
-
     .galleri_forside {
       max-width: 100%;
       height: auto;
@@ -72,7 +59,6 @@ import Button_line from "../components/Button_line.astro";
 
     main {
       margin: auto;
-      max-width: 100%;
     }
 
     .galleri_forside {
@@ -130,6 +116,25 @@ import Button_line from "../components/Button_line.astro";
       grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
       gap: 1rem;
       padding: 0;
+    }
+    .news_grid {
+      margin: 2rem;
+    }
+    .artists_grid {
+      margin-inline: 4rem;
+    }
+    @media (min-width: 600px) {
+      .news_grid {
+        display: flex;
+        flex-direction: flex-end;
+        margin: 12px;
+      }
+      .artists_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        margin-inline: 4rem;
+      }
     }
   </style>
 </Layout>

@@ -4,7 +4,7 @@ const { title, text } = Astro.props;
 
 <section>
   <slot />
-  <h3>{title}</h3>
+  <h4>{title}</h4>
   <p>{text}</p>
   <span>&rarr;</span>
 </section>
@@ -18,7 +18,7 @@ const { title, text } = Astro.props;
     padding: 20px;
   }
 
-  h3 {
+  h4 {
     color: white;
   }
 
@@ -45,4 +45,11 @@ const { title, text } = Astro.props;
     height: auto;
     gap: 20px;
   }
+  @media (max-width: 600px) {
+      h4 {
+        font-size: 1.5rem;
+      }
+      section{
+        gap: 10px;
+      }
 </style>
