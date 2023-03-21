@@ -11,6 +11,12 @@ const options = {
 };
 const response = await fetch(url, options);
 const data = await response.json();
+console.log(data);
+const wednesday = data.filter((act) => act.day === "Wednesday");
+const thursday = data.filter((act) => act.day === "Thursday");
+const friday = data.filter((act) => act.day === "Friday");
+const saturday = data.filter((act) => act.day === "Saturday");
+const sunday = data.filter((act) => act.day === "Sunday");
 ---
 
 <Layout>
@@ -21,7 +27,23 @@ const data = await response.json();
     <h2>ARTISTS</h2>
     <Day title="WEDNESDAY, 19th JULY" />
     <div>
-      {data.map((artist) => <Artist image={`/img/${artist.image}`} name={artist.name} />)}
+      {wednesday.map((artist) => <Artist image={`/img/${artist.image}`} name={artist.name} />)}
+    </div>
+    <Day title="THURSDAY, 20th JULY" />
+    <div>
+      {thursday.map((artist) => <Artist image={`/img/${artist.image}`} name={artist.name} />)}
+    </div>
+    <Day title="FRIDAY, 21th JULY" />
+    <div>
+      {friday.map((artist) => <Artist image={`/img/${artist.image}`} name={artist.name} />)}
+    </div>
+    <Day title="SATURDAY, 22th JULY" />
+    <div>
+      {saturday.map((artist) => <Artist image={`/img/${artist.image}`} name={artist.name} />)}
+    </div>
+    <Day title="SUNDAY, 23th JULY" />
+    <div>
+      {sunday.map((artist) => <Artist image={`/img/${artist.image}`} name={artist.name} />)}
     </div>
   </main>
 </Layout>
