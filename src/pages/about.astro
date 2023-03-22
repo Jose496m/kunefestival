@@ -36,14 +36,14 @@ import AboutCard from "../components/About_card.astro";
           </div>
         </div>
 
-        <div>
+        <div class="order_2">
           <AboutCard
             title="LOCATION"
             text="The island is a decommissioned defense fort built in the 19th century. A unique landmark with historical value, the fort-island was recently renovated and repurposed into a place dedicated to young people and innovative cultural initiatives. It can host 2500 people, 1000 of which could be accommodated in the camping area. Traveling to KUNE Festival by boat for a 30-minute journey to an island location adds a unique and significant element to the festival experience. Reaching the festival site by boat separates us from our everyday lives and creates a sense of escape to a new world. The festival island becomes a self-contained microcosm where everyone is living, breathing, and experiencing the festival together."
             text1="This close-knit community setting creates a petri dish for social interactions, where we can connect and bond in a way that is impossible in our everyday lives.This unique location provides a striking contrast between its historical purpose of aggression and its current function as a hub for a cultural celebration. The island’s transformation into a place dedicated to youth and innovative cultural initiatives highlights the shift from conflict to community and symbolizes hope and possibility. By hosting the festival on this historic site, we aim to offer a powerful reminder of the positive impact art and culture can have on society and their role in bringing people together and fostering understanding and connection."
           />
         </div>
-        <div>
+        <div class="order_1">
           <img class="pic1 pic3" src="/KUNE1.webp" alt="billede" />
         </div>
       </section>
@@ -123,6 +123,12 @@ import AboutCard from "../components/About_card.astro";
         max-width: 1200px;
         margin: auto;
         float: none;
+      }
+      .order_1 {
+        order: 1;
+      }
+      .order_2 {
+        order: 2;
       }
     }
 
