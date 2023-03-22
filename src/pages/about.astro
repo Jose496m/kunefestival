@@ -20,21 +20,18 @@ import AboutCard from "../components/About_card.astro";
           title="WHO IS KUNE?"
           text="Being at KUNE Festival is an immersive experience that blends art, music, and the island’s natural beauty. The location’s secludedness adds to the sense of separation from everyday life. At the same time, the art invites us to engage in open discussions and imagine a world that can be different, making a positive impact over our mentality and worldview. In conjunction with the art, the music creates a holistic cultural experience representative of the modern, young Nordic artistic community."
           text1="Most importantly, we strive to build an environment that values and celebrates what we call the ‘Otherness’ of the world. The Otherness is a concept that acknowledges the existence of people who may be similar to us in many ways yet possess traits, values, and characteristics that set them apart as “other.” Humans share a great deal in common, but we are also remarkably diverse regarding cultural or social norms, habits, or behavior. The Otherness element recognizes this diversity and encourages us to acknowledge, appreciate, and celebrate our differences. By embracing the Otherness, we create a more inclusive, compassionate, and open-minded world. Rather than viewing differences as a source of conflict or division, we recognize them as a source of strength and beauty. The Otherness element invites us to see the world through the eyes of others, to listen to their stories, and to appreciate their unique perspectives. In doing so, we expand our horizons and gain a more complex understanding of what it means to be human."
-          text2="On the more practical side of things, KUNE Festival is an NGO made up of over 30 passionate and dedicated individuals who work voluntarily year-round to create this extraordinary experience. Our team is comprised of artists, musicians, designers, writers, project managers, and cultural enthusiasts, all united by our shared vision and values. We are motivated by the belief that art and culture have the power to create positive change in the world, and we are committed to working towards this goal by creating a unique platform that celebrates the Nordic underground talent. Our team is inspired by the creative community that we are building, and we are continually amazed by the skills and dedication of our members."
         />
       </div>
-      <div class="imagelist">
-        <img class="pic1 pic2" src="/KUNE22.webp" alt="billede" />
-        <div>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/OJyL2mzsiLw"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-        </div>
+
+      <div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/OJyL2mzsiLw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
       </div>
     </section>
     <section class="grid_1-1">
@@ -60,7 +57,7 @@ import AboutCard from "../components/About_card.astro";
         />
       </div>
       <div class="order">
-        <img class="pic1" src="/map.webp" alt="billede" />
+        <img class="pic1 pic0" src="/map.webp" alt="billede" />
       </div>
     </section>
   </article>
@@ -79,6 +76,7 @@ import AboutCard from "../components/About_card.astro";
     iframe {
       width: 500px;
       height: 300px;
+      margin-top: 20%;
     }
 
     .grid_1-1 {
@@ -105,35 +103,28 @@ import AboutCard from "../components/About_card.astro";
     }
     .pic1 {
       width: 90%;
+      margin-top: 15%;
+      margin-left: 5%;
     }
     .pic2 {
       margin-top: 10%;
       margin-bottom: 10%;
     }
 
-    .container {
-      width: 229px;
-      /* 
-        transform: translate(-50%, -50%);
-        margin-top: 3%;
-        margin-left: 119%; */
-    }
     .pic3 {
       /* margin-top: -60%; */
     }
-
-    /*Area of images*/
-    .wrapper {
-      width: 85%;
-      display: flex;
-      /* margin-top: -40%;
-        margin-left: 7%; */
+    .pic0 {
+      margin-bottom: 15%;
     }
 
     main {
       max-width: 1200px;
       margin: auto;
       float: none;
+    }
+    .text3 {
+      margin-top: 7%;
     }
   }
 
@@ -149,28 +140,6 @@ import AboutCard from "../components/About_card.astro";
     }
 
     /*Area of images*/
-    .wrapper {
-      width: 100%;
-      display: flex;
-    }
-    .container {
-      width: 100px;
-      /* transform: translate(-50%, -50%);
-        margin-top: 7%;
-        margin-left: 10%; */
-    }
-    .k1 {
-      /* width: 150%; */
-      margin: 8%;
-    }
-    .k2 {
-      /* width: 150%; */
-      margin: 8%;
-    }
-    .k3 {
-      /*  width: 150%; */
-      margin: 8%;
-    }
 
     .pic1 {
       width: 85%;
