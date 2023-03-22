@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import Artist from "../components/Artist.astro";
 import Day from "../components/Day.astro";
 import Button_line from "../components/Button_line.astro";
+import Navigation from "../components/Navigation.astro";
 const url = "https://lqsydolvzgwrecxfbwmp.supabase.co/rest/v1/kune";
 const options = {
   headers: {
@@ -24,6 +25,7 @@ const sunday = data.filter((act) => act.day === "Sunday");
   <Header title="LINE-UP">
     <img src="/lineup2.webp" alt="lineup" />
   </Header>
+  <Navigation />
   <main>
     <h2>ARTISTS</h2>
     <Day title="WEDNESDAY, 19th JULY" />
@@ -70,4 +72,4 @@ const sunday = data.filter((act) => act.day === "Sunday");
       margin-block: 1.5rem;
     }
   }
-</style>" />
+</style>
